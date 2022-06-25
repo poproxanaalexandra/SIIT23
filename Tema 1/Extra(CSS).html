@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Caini</title>
+    <style>
+        body {
+            background-color: ivory;
+            display: flex;
+        }
+
+        aside {
+            width: 40vh;
+            height: 90vh;
+            border-right: 3px solid brown;
+            flex-direction: column;
+            margin: 10vh 10vh;
+            padding-top: 10vh;                     
+            display: flex;
+
+
+        }
+
+        aside>div {
+            padding: 20px;
+        }
+
+      
+
+        .hamMeniu {
+            width: 10px;
+            height: 15px;
+
+        }
+
+        .button {
+            padding: 15px 0px;
+            cursor: pointer;
+        }
+        .button.active>a[href] {
+           color: teal;
+            
+        }
+        .button :hover {
+            background-color: rgb(211, 102, 102);
+            
+        }
+        
+        a[href] {
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 20px;
+            color: black;
+
+
+        }
+
+        main {
+            flex: 1;
+            flex-direction: column;
+            display: flex;
+            height:90vh;
+        }
+
+        header {
+            width: 80vh;
+            flex-direction: column;
+            display: block;
+        }
+
+        .imagine {
+            width: 300px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 50px 250px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <aside>
+        <div class="button">
+            <img class="hamMeniu" src="Hamburger.png">
+            <a href="">Rottweiller</a>
+
+        </div>
+        <div class="button active">
+            <img class="hamMeniu" src="Hamburger.png">
+            <a href="">Beagle</a>
+        </div>
+        <div class="button">
+            <img class="hamMeniu" src="Hamburger.png">
+            <a href="">Poodle</a>
+        </div>
+        <div class="button">
+            <img class="hamMeniu" src="Hamburger.png">
+            <a href="">Rottweiller</a>
+        </div>
+    </aside>
+    <main>
+        <header>
+            <img class="imagine" src="caine-beagle.jpeg">
+
+            <div>
+                <P>
+                    <h1> Beagle </h1>
+                    </P>
+                    <p> <b>Weight:</b> 10 - 11kg</p>
+                    <p><b>Coat:</b> Short haired, hard coad of medium lenght</p>
+                    <p><b>Color:</b> Many colors</p>
+                    </br>
+                    <p>The beagle is a breed of small hound that is similar in appearance to
+                        th much larger foxhound. The beagle is a scent hound, developed primarily
+                        for hunting hare (beagling). With a great sense of smell
+                        and superior tracking instinct, the beagle is employed as detection
+                        dog for prohibited agricultural imports and
+                        foodsnuffs in quarantine around the world. The beagle is intelligent
+                        but single-minded. It is a popular pet due to its size, good temper, and lack
+                        of inherited health problems.
+                    </p>
+            </div>
+
+
+        </header>
+
+    </main>
+
+</body>
+
+</html>

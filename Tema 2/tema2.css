@@ -1,0 +1,61 @@
+      body {
+        background-color: rgb(255, 247, 238);
+        display: flex;
+        margin: 100px 100px;
+        justify-content: space-evenly;
+      }
+
+      .part {
+        margin: 100px 50px;
+        max-width: 250px;
+        max-height: 90vh;
+        display: flex;
+        text-align: center;
+      }
+
+      .pictures {
+        max-width: 400px;
+        max-height: 400px;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      .button1 {
+        padding: 0px 5px;
+        cursor: pointer;
+        max-width: 15px;
+        max-height: 15px;
+      }
+
+      .counter {
+        display: flex;
+        font: size 0.9em;
+        justify-content: space-evenly;
+      }
+
+      .button2 {
+        background-color: #000000;
+        border: none;
+        color: white;
+        padding: 8px 25px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      .button3 {
+        background-color: rgb(255, 247, 238);
+        border: 2px solid black;
+        color: rgb(0, 0, 0);
+        padding: 8px 25px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        cursor: pointer;
+      }
+   

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="weather.css">
+
+
+
+</head>
+
+<body>
+    <div class="search">
+        <input class="oras" type="text" placeholder="ex. New York" />
+        <button class="button" onclick="getWeather()">Afiseaza vremea </button>
+        <button class="button" onclick="getForecast()">Afiseaza prognoza </button>
+
+    </div>
+
+    <div class="grade" id="grade">
+        <p><span id="localitate"></span></p>
+        <p><span id="temp"> </span></p>
+        <p><span id="description"></span> <img id="pic" src=""> </img> </p>
+        <p></p>
+    </div>
+
+    <div id="divid" class="clock"></div>
+    <div class="oraLocala">
+        Ora Romaniei
+    </div>
+    </br>
+    </br>
+    <div id="all" class="hidden">
+        <div class="weatherNow">
+            <div>
+                <h1> Vremea acum </h1>
+                <hr>
+            </div>
+            <div class="div1">
+                <div class="div2">
+
+                    <div class="square"> Umiditate
+                        </br></br>
+                        <span id="humidity"></span>
+                    </div>
+                    <div class="square"> Presiune
+                        </br></br>
+                        <span id="hPA"></span>
+                    </div>
+                    </br>
+                    <div class="square"> Minima zilei
+                        </br></br>
+                        <span id="min"></span>
+                    </div>
+                    <div class="square"> Maxima zilei
+                        </br></br>
+                        <span id="max"></span>
+                    </div>
+
+
+                </div>
+                <div>
+                    <iframe class="map" src=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="weatherNow">
+        <h1> Vremea in urmatoarele zile </h1>
+        <hr>
+    </div>
+
+    <div class="forecast">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+    </div>
+    </div>
+
+
+
+</body>
+<script src="weather.js"></script>
+
+</html>

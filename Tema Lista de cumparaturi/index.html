@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de cumparaturi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    </head>
+
+<body onload="draw()">
+    <div class="main">
+        <h1> Shopping List </h1>
+        <div class="divInput">
+            <form id="produs" onsubmit="adauga(this,event);">
+                <input class="clasaInput" type="text" name="elementNou" placeholder="ex. Lapte">
+                <input type="submit" class="addButton" onclick="showTable();" value="Add item">
+            </form>
+        </div>
+        <br>
+        <div>
+            <input type="submit" class="addButton" onclick="sort('az');" value="Sort asc">
+            <input type="submit" class="addButton" onclick="sort('za');" value="Sort desc">
+
+        </div>
+        <br>
+        <div>
+            <table id="newTab" class="hidden">
+                <thead>
+                    <tr>
+                        <th style="width: 60%; font-size: 1.1em">Item</th>
+                        <th style="width: 60%; font-size: 1.1em"> Action </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+
+</body>
+
+</html>

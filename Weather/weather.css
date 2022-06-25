@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+        body {
+            font-family: 'Nanum Myeongjo', serif;
+            font-weight: 500;
+            background-attachment: fixed;
+            
+            
+
+        }
+
+        .clock {
+            background-color: rgba(95, 158, 160, 0.729);
+            width: fit-content;
+            height: fit-content;
+
+            align-self: flex-end;
+            font-size: 5em;
+            margin: auto auto auto 150px;
+            color: rgb(255, 255, 255);
+        }
+        .oraLocala{
+            font-size: 1.5em;
+            color: rgba(255, 255, 255, 0.729);
+            margin: auto 700px auto 150px;
+            background-color: rgba(95, 158, 160, 0.729);
+            width: 204.5px;
+            height: fit-content;
+
+        }
+
+        .weatherNow {
+            margin: 30px auto;
+            width: 1200px;
+            background-color: rgba(253, 253, 253, 0.345);
+            padding: 10px;
+
+        }
+
+        .forecast {
+            margin: 10px auto;
+            width: 1200px;
+            padding: 10px;
+            display: flex;
+
+
+        }
+
+        .search {
+            display: flex;
+            font-family: 'Nanum Myeongjo', serif;
+            background-color: rgba(253, 253, 253, 0);
+            margin: 10px auto 50px auto;
+            width: 1200px;
+            padding: 10px;
+
+        }
+
+        .button {
+            font-family: 'Nanum Myeongjo', serif;
+            font-size: 1.2em;
+            outline: none;
+            height: 40px;
+            text-align: center;
+            width: 250px;
+            border-radius: 40px;
+            background: #fff;
+            border: 2px solid rgb(255, 255, 255);
+            color: rgb(0, 102, 128);
+            letter-spacing: 1px;
+            text-shadow: 0;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            margin: auto;
+        }
+
+        .button:hover {
+            color: white;
+            background: rgba(0, 102, 128, 0.362);
+            ;
+        }
+
+        .button:active {
+            letter-spacing: 2px;
+
+        }
+        
+
+
+        .oras {
+            font-family: 'Nanum Myeongjo', serif;
+            width: 500px;
+            height: 30px;
+            margin: 5px;
+            font-size: 1.1em;
+        }
+
+        .map {
+            width: 800px;
+            height: 500px;
+        }
+
+        .div1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .div2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #grade {
+            margin: auto;
+            width: 400px;
+            height: 200px;
+            align-items: center;
+            color: azure;
+
+        }
+
+        #temp {
+            font-size: 5em;
+            text-align: center;
+        }
+
+        #description {
+            font-size: 3em;
+            text-align: center;
+        }
+
+        .day {
+            padding: 15px;
+            margin: 0px auto;
+            background-color: rgba(253, 253, 253, 0.345);
+            justify-content: space-between;
+        }
+
+        .square {
+            width: 150px;
+            height: 150px;
+            border-radius: 20%;
+            background-color: rgba(95, 158, 160, 0.41);
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 300;
+            align-content: center;
+        }
+
+        #humidity,
+        #min,
+        #max {
+            font-size: 2.5em;
+        }
+
+        #hPA{
+            font-size: 1.75em; 
+        }

@@ -1,0 +1,80 @@
+body {
+    background-color: beige;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .main {
+    background-color: rgba(128, 128, 0, 0.612);
+    width: 700px;
+    height: 150px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.5em;
+    justify-content: center;
+    padding: 20px;
+
+
+  }
+
+  label {
+    padding: 10px;
+  }
+
+  input {
+    padding: 3px;
+    margin: 6px;
+  }
+
+  .button {
+    margin: 30px;
+    width: 250px;
+    height: 50px;
+    border: 3px solid olive;
+    background-color: beige;
+    color: rgb(0, 0, 0);
+    font-size: 1.0em;
+    box-shadow: 2px;
+    cursor: pointer;
+    
+  }
+
+  .button:hover {
+    background-color: olive;
+  }
+
+  .tabel {
+    width: 800px;
+   
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+    background-color:  rgba(128, 128, 0, 0.612);
+
+  }
+
+  .hidden {
+    margin: 50px auto;
+    width: 700px;
+    display: none;
+
+  }
+
+  .editeaza,
+  .sterge {
+    margin: 2px;
+    cursor: pointer;
+    background-color: olive;
+    color: white;
+    border-radius: 10%;
+
+  }
+
+  .sterge:hover {
+    background-color: rgb(138, 0, 0);
+  }
+  .editeaza:hover {
+    background-color: rgba(128, 128, 0, 0.51);
+  }

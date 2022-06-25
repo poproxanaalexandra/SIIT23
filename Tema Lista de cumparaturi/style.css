@@ -1,0 +1,64 @@
+body {
+    background-color: rgba(255, 248, 205, 0.81);
+    margin: auto;
+    padding: 50px;
+}
+
+.main {
+    background-color: rgb(236, 219, 164);
+    width: 700px;
+    margin: auto;
+    padding: 50px;
+
+}
+
+.clasaInput {
+    width: 200px;
+    font-size: 1.2em;
+   margin-right: 20px;
+}
+
+.addButton {
+    background-color: rgb(36, 75, 0);
+    color: rgb(236, 219, 164);
+    width: 130px;
+    border-radius: 5%;
+    font-size: 1.1em;
+}
+
+.addButton:hover {
+    background-color: rgba(36, 75, 0, 0.27);
+    color: black;
+}
+
+.divInput {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    margin-top: 30px;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.buyed {
+    background-color: rgb(36, 75, 0);
+    color: rgb(236, 219, 164);
+    border-radius: 5%;
+
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+h1{
+    padding-bottom: 20px;
+}

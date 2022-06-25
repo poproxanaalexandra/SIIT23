@@ -1,0 +1,50 @@
+<style>
+       
+        
+        h3 {
+            margin: 0px;
+            padding: 5px;
+            display: inline-block;
+
+
+        }
+
+        a[href] {
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: black;
+            margin: 0px;
+            padding: 5px;
+            display: inline-block;
+        }
+        main{
+            flex-direction: column;
+            flex:1;
+            
+        }
+        p{
+            font-size: 1em;
+            text-align: justify;
+        }
+        body {
+            margin: 5vh 50vh;
+            flex: 1;
+            
+        }
+        nav {
+            height: auto;
+            border-bottom: 2px solid black;
+            flex-direction: row;
+           
+           
+        }
+        nav > div {
+            display: inline-block;
+            flex-direction: row;
+            float: right; 
+          
+            
+         }
+
+</style>

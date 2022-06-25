@@ -1,0 +1,110 @@
+.header {
+
+    padding: 50px 50px 50px 5px;
+    display: flex;
+    background-color: lightgray;
+
+}
+
+body {
+    margin: 0px;
+    background-color: white;
+}
+
+.textPrincipal {
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textSecundar {
+    color: grey;
+    font-size: 2em;
+    padding-top: 18px;
+    padding-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.messageContainer {
+    background-color: lightgray;
+    width: 600px;
+    height: 260px;
+    margin: 50px 350px 50px 440px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 6px 30px;
+    margin: 12px 10px;
+    display: grid;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=message] {
+    width: 300px;
+    height: 183px;
+    padding: 10px 10px;
+    margin: 7px 9px;
+    flex-direction: column;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+input[type=sendMessage] {
+    width: 100px;
+    background-color: #2b49f1;
+    color: white;
+    padding: 10px 30px;
+    margin: 10px 0px 0px 430px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+input[type=sendMessage]:hover {
+    background-color: #7192ee;
+}
+
+.social {
+    display: flex;
+    width: 300px;
+    height: auto;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin: auto;   
+    border-right: 2xp solid black;        
+}
+.textSocial{
+    font-size: 1em;
+    margin: auto;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+
+}
+a[href] {
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+    color: black;
+    border-right: 1px solid black;
+    margin-top: 5px;
+   
+
+
+}

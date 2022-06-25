@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teme JS2</title>
+
+    <script>
+        /**
+         * O functie "getDigits" care primeste un sir de caractere si returneaza cifrele din sirul respectiv
+         */
+
+        /* function getDigits2(str) {
+            let numbers = str.replace(/\D/g, "");
+            return numbers;
+
+        }
+        
+        */
+
+        function getDigits(str) {
+            let numbers = '';
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] >= '0' && str[i] <= '9') {
+                    numbers += str[i];
+                }
+            }
+            return numbers;
+        }
+
+
+        console.log(getDigits("as123dfgh123jkl"));
+        console.log(getDigits("asd1!2@3#$%^&*()fghjkl"));
+        console.log(getDigits("asdfghjkl"));
+
+        /**
+         * O functie "getLetters" care primeste un sir de caractere si returneaza doar literele din sirul respectiv
+         */
+
+        function getLetters(str) {
+            let letters = '';
+            for (let i = 0; i < str.length; i++) {
+                if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z')) {
+                    letters += str[i];
+                }
+            }
+            return letters;
+        }
+        console.log(getLetters("as123dfgh123jkl"));
+        console.log(getLetters("asd1!2@3#$%^&*()fghjkl"));
+        console.log(getLetters("asdfghjkl"));
+
+        /**
+         * O functie "getFirst5Letters" care primeste un sir de caractere si returneaza primele 5 litere(daca exista)
+         */
+
+        function getFirst5Letters(str) {
+            let firstLetters = '';
+            for (let i = 0; i < str.length; i++) {
+                if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z')) {
+                    firstLetters += str[i];
+                }
+            }
+            return (firstLetters.slice(0, 5));
+
+        }
+        console.log(getFirst5Letters("as123dfgh123jkl"));
+        console.log(getFirst5Letters("asd1!2@3#$%^&*()fghjkl"));
+        console.log(getFirst5Letters("asdfghjkl"));
+
+
+        /**
+         * O functie "concatenate" care primeste o lista de siruri de caractere si returneaza sirurile concatenate
+         */
+
+        function concatenate(arr) {
+            let con = '';
+            for (let i = 0; i < arr.length; i++) {
+                con += arr[i];
+            }
+            return con;
+        }
+
+        console.log(concatenate(["a", "b", "c"]));
+
+        /**
+         * O functie "getAllDigits" care primeste o lista de siruri de caractere si returneaza cifrele din toate sirurile
+         */
+
+        function getAllDigits(arr) {
+            let digits = '';
+            for (let i = 0; i < arr.length; i++) {
+                digits += getDigits(arr[i]);
+            }
+            return digits;
+        }
+
+        console.log(getAllDigits(["a1", "b2", "c3"]));
+        console.log(getAllDigits(["a1a", "b1b", "c1c"]));
+        console.log(getAllDigits(["a", "A", "123"]));
+
+        /**
+         * O functie "invertAllStrings" care primeste o lista de siruri de caractere si returneaza lista de siruri de caractere inversate
+         */
+       
+       
+       /* function invertAllStrings2(arr) {
+            for (let idx in arr) {
+                arr[idx] = arr[idx].split('').reverse().join('');
+            } return arr;
+        }
+        */
+
+        function invertAllStrings (arr) {
+            let arrInvers = [];
+            for (let i = 0; i < arr.length; i++) {
+                let str = "";
+                for (let j = arr[i].length - 1; j >= 0; j--) {
+                    str += arr[i][j];
+                }
+                arrInvers.push(str);
+            }
+            return arrInvers;
+         }
+
+        console.log(invertAllStrings(["a1", "b2", "c3"]));
+        console.log(invertAllStrings(["a1a", "b1b", "c1c"]));
+        console.log(invertAllStrings(["a", "A", "123"]));
+
+        /**
+         * Calculeaza factorialul unui numar ("factorial")
+         */
+
+        function factorial(n) {
+            let produs = 1;
+            for (let i = 1; i <= n; i++) {
+                produs = produs * i;
+            }
+            return produs;
+        }
+
+        console.log(factorial(3));
+        console.log(factorial(4));
+        console.log(factorial(6));
+        console.log(factorial(122));
+
+        /**
+         * Calculeaza cel mai mare divizor comun al 2 numere ("cmmdc")
+         */
+
+        function cmmdc(a, b) {
+            let divizor = 0;
+            for (let i = 1; i <= a && i <= b; i++) {
+                if (a % i === 0 && b % i === 0) {
+                    divizor = i;
+                }
+            } return divizor;
+        }
+
+        console.log(cmmdc(25874, 258));
+        console.log(cmmdc(452, 540));
+        console.log(cmmdc(11, 121));
+        console.log(cmmdc(25, 100));
+
+        /**
+         * Calculeaza cel mai mic multiplu comun al 2 numere
+         */
+
+        function cmmmc(a, b) {
+            let multiplu = 0;
+            for (let i = 1; i <= (a * b); i++) {
+                if (i % a === 0 && i % b === 0) {
+                    multiplu = i;
+                    return multiplu;
+                }
+            }
+        }
+
+        console.log(cmmmc(25874, 258));
+        console.log(cmmmc(452, 540));
+        console.log(cmmmc(11, 121));
+        console.log(cmmmc(25, 100));
+
+        /**
+         * Returneaza un array care sa contina toti divizorii unui numar (ex pentru 64: trebuie sa returneze [2,4,8,16,32]) ("divizori")
+         */
+
+        function divizori(numar) {
+            let arr = [];
+            for (let i = 2; i <= numar - 1; i++) {
+                if (numar % i === 0) {
+                    arr.push(i)
+
+                }
+            } return arr;
+        }
+
+        /**
+         * O functie care verifica daca un numar este palindrom (ex: 121, 1234321) ("palindrom")
+         */
+
+        function palindrom(numar) {
+            let copieNumar = numar;
+            let numarReversed = 0;
+            let lastDigit = 0;
+            while (numar > 0) {
+                lastDigit = numar % 10;
+                numar = parseInt(numar / 10);
+                numarReversed = numarReversed * 10 + lastDigit;
+
+            }
+            if (copieNumar == numarReversed) {
+                return true;
+            } else {
+                return false
+            }
+        }
+
+        console.log(palindrom(100));
+        console.log(palindrom(1111));
+        console.log(palindrom(121));
+
+        /**
+         * O functie care sorteaza numerele pare dintr-un sir de numere primit ca parametru. ("sort") 
+         */
+
+        function sort(arr) {
+            let newArr = [];
+            let x = 0;
+            for (let i = 0; i <= arr.length; i++) {
+                if ((arr[i] % 2) === 0) {
+                    newArr.push(arr[i]);
+                }
+
+                newArr = newArr.sort((a, b) => a - b);
+
+            }
+            return newArr;
+        }
+
+        console.log(sort([4, 8, 6, -1, -2, -3, 30, 0]));
+
+        function sortImpar(arr) {
+            let newArr = [];
+            let x = 0;
+            for (let i = 0; i <= arr.length - 1; i++) {
+                if ((arr[i] % 2) != 0) {
+                    newArr.push(arr[i]);
+                }
+
+                newArr = newArr.sort((b, a) => a - b);
+
+            }
+            return newArr;
+        }
+
+
+        /**
+         * O functie care primeste ca parametru un array de numere. Aceasta sorteaza ascendent numerele pare si descendent numerele impare, in cadrul aceluiasi array primit ca parameru. ("sortAscDesc")
+         */
+
+        /* function sortAsc(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                let small = i;
+                for (let j = i; j <= arr.length - 1; j++) {
+                    if (arr[j] < arr[small]) {
+                        small = j;
+                    }
+                }
+                let temp = arr[i];
+                arr[i] = arr[small];
+                arr[small] = temp;
+            }
+            return arr;
+        }
+        */
+
+        function sortAscDesc(arr) {
+            let arrPar = sort(arr);
+            let arrImpar = sortImpar(arr);
+            return arrPar.concat(arrImpar);
+        }
+
+
+        /**
+         * O functie care primeste 2 parametri(un array si un numar). Folosind binary search verificati daca numarul primit ca parametru se gaseste in array. ("binarySearch")
+         */
+
+        function binarySearch(arr, n) {
+            let left = 0;
+            let right = arr.length - 1;
+            arr.sort(function (a, b) {
+                return a - b;
+            });
+            while (left <= right) {
+                let middle = parseInt((left + right) / 2);
+                if (arr[middle] < n) {
+                    left = middle + 1;
+                } else if (arr[middle] > n) {
+                    right = middle - 1;
+                } else {
+                    return true;
+                }
+            }
+            return false;
+        }
+        console.log(binarySearch([1, 2, 3, 4, 5], 5))
+
+        /**
+         * O functie care implementeaza binary search pentru a verifica daca un numar se regaseste intr-un array. Dupa ce se termina executia functiei trebuie sa returnati de cate ori s-a apelat functia recursiv ("countBinarySearch")
+         */
+
+        function countBinarySearch(arr, n) {
+            let left = 0;
+            let right = arr.length - 1;
+
+            let count = 0;
+            recursivBinary(left, right);
+
+            function recursivBinary(left, right) {
+                if (left <= right) {
+                    let middle = parseInt((left + right) / 2);
+                    if (arr[middle] < n) {
+                        left = middle + 1;
+                        count++;
+                        recursivBinary(left, right);
+                    } else if (arr[middle] > n) {
+                        right = middle - 1;
+                        count++;
+                        recursivBinary(left, right);
+                    } else if (arr[middle] === n) {
+                        count++;
+
+                    }
+                }
+            }
+            return count;
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
