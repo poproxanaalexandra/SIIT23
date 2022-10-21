@@ -30,8 +30,8 @@
         str += `<tr>
             <td>${list[i].nume}</td>
             <td>${list[i].telefon}</td>
-            <td><input class="editeaza" type="button" onclick="editeaza(${i});" value="Editeaza"></td>
-              <td><input class="sterge" type="button" onclick="sterge(${i});" value="Sterge"></td>
+            <td><input class="btn btn-outline-secondary" type="button" onclick="editeaza(${i});" value="Editeaza"></td>
+              <td><input class="btn btn-outline-danger" type="button" onclick="sterge(${i});" value="Sterge"></td>
             </tr>
     
     `;

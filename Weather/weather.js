@@ -76,8 +76,8 @@ function drawForecast() {
 
 let currentTime = new Date().getHours();
 if (document.body) {
-    if (7 <= currentTime && currentTime < 20) {
-        document.body.background = "https://img.wallpapersafari.com/desktop/1920/1080/89/40/xcRnip.jpg";
+    if (7 <= currentTime && currentTime < 19) {
+        document.body.background = "https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
     }
     else {
         document.body.background = "https://img.wallpapersafari.com/desktop/1920/1080/68/82/PvDEwd.jpg";

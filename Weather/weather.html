@@ -17,47 +17,46 @@
 <body>
     <div class="search">
         <input class="oras" type="text" placeholder="ex. New York" />
-        <button class="button" onclick="getWeather()">Afiseaza vremea </button>
-        <button class="button" onclick="getForecast()">Afiseaza prognoza </button>
+        <button class="button" onclick="getWeather()">Current weather </button>
+        <button class="button" onclick="getForecast()">Forecast </button>
+        <!--<div id="divid" class="clock"></div> -->
+    
 
     </div>
 
     <div class="grade" id="grade">
-        <p><span id="localitate"></span></p>
-        <p><span id="temp"> </span></p>
-        <p><span id="description"></span> <img id="pic" src=""> </img> </p>
+        <p id="localitate"><span ></span></p>
+        <p id="temp"><span> </span></p>
+        <p style="text-align: center;"><span id="description"></span> <img id="pic" src=""> </img> </p>
         <p></p>
     </div>
 
-    <div id="divid" class="clock"></div>
-    <div class="oraLocala">
-        Ora Romaniei
-    </div>
+    
     </br>
     </br>
     <div id="all" class="hidden">
         <div class="weatherNow">
             <div>
-                <h1> Vremea acum </h1>
+                <h1> Current weather </h1>
                 <hr>
             </div>
             <div class="div1">
                 <div class="div2">
 
-                    <div class="square"> Umiditate
+                    <div class="square"> Humidity
                         </br></br>
                         <span id="humidity"></span>
                     </div>
-                    <div class="square"> Presiune
+                    <div class="square"> Pressure
                         </br></br>
                         <span id="hPA"></span>
                     </div>
                     </br>
-                    <div class="square"> Minima zilei
+                    <div class="square"> Lowest temp
                         </br></br>
                         <span id="min"></span>
                     </div>
-                    <div class="square"> Maxima zilei
+                    <div class="square"> Highest temp
                         </br></br>
                         <span id="max"></span>
                     </div>
@@ -72,7 +71,7 @@
     </div>
 
     <div class="weatherNow">
-        <h1> Vremea in urmatoarele zile </h1>
+        <h1> Forecast </h1>
         <hr>
     </div>
 
